@@ -1,0 +1,42 @@
+/* Write all your custom CSS below this line  */
+
+body {
+    background-color: rgb(30, 37, 139);
+    text-align: center;
+    margin: 0; 
+}
+
+header{
+    font-family: 'Audiowide', cursive;
+    background-color: rgb(108, 146, 250);
+    padding: 1rem;
+}
+
+section{
+    width: 50%;
+
+    text-align: left;
+    background-color: rgb(24, 24, 24);
+    color: aqua;
+
+    border-left: .5rem solid rgb(209, 209, 209);
+ 
+    margin: 5rem auto 5rem auto;
+}
+
+section h3{
+    padding: 1rem 1rem 0rem 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+section p{
+    background-color: rgb(150, 150, 150);
+    padding: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+footer{
+    background-color: rgb(108, 146, 250);
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
