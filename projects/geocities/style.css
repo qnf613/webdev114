@@ -1,0 +1,70 @@
+/* Write all your custom CSS below this line  */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: indigo;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+
+
+body {
+    background-image: url("gif/night.gif");
+    text-align: center;
+    margin: 0; 
+}
+
+section.intro{
+    color: white;
+    size: 5rem;
+    margin: 5rem auto 5rem auto;
+    padding: 1rem;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20pt;
+}
+
+section.gamer{
+    background-image: url("gif/nightandstarsbackground.gif");
+    color: white;
+    size: 5rem;
+    margin: 5rem auto 5rem auto;
+    padding: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+section.reading{
+    /* background-image: url("gif/nightandstarsbackground.gif"); */
+    color: white;
+    size: 5rem;
+    margin: 5rem auto 5rem auto;
+    padding: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+p.pikachu{
+    position:absolute;
+    top: 31rem;
+    left: 38rem;
+}
+
+p.sonic{
+    position:absolute;
+    top: 46rem;
+    right: 30rem;
+}
+
+p.readingman{
+    position:absolute;
+    top: 85rem;
+    left: 20rem;
+}
+
+footer{
+    /* background-color: rgb(108, 146, 250); */
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
