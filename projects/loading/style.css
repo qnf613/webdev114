@@ -1,39 +1,108 @@
+
+/* For all pages */
 .text-margin{
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
+body{
+  background-color: lavenderBlush;
+  color: DarkOrange;
+}
+
+/* button */
 .button{
-    text-align: center;
+  text-align: center;
 }
 
+/* For loading */
 .loding-container {
-    margin: 100px auto;
-    width: 500px;
-    text-align: center;
+  margin: 100px auto;
+  width: 500px;
+}
+
+.progress {
+  padding: 4px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.5);  
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 20px;
+  border-radius: 30px;
+  transition: 0.5s linear;  
+  transition-property: width, background-color;    
+}
+
+/* when it ended */
+.progress-moved .progress-bar {
+  width: 100%; 
+  background-color: #AFF0F0;/*   #A9EED1;   */
+  animation: progressAnimation 9s;
+}
+/* animation, from 'start color' to '99% for end color'*/
+@keyframes progressAnimation {
+  0%   { width: 5%; background-color: #FCFAA6;}
+  100% { width: 99.99%; background-color: #3CD184; }
+}  
+
+/* For waiting */
+.waiting {
+  font-size: 10px;
+  margin: 50px auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: white;
+  background: -moz-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, white 10%, rgba(255, 255, 255, 0) 100%);
+  position: relative;
+  -webkit-animation: load3 1.5s infinite linear;
+  animation: load3 1.5s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+}
+.waiting:before {
+  width: 50%;
+  height: 50%;
+  background: white;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  content: '';
+}
+.waiting:after {
+  background: lavenderBlush;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  
-  .progress {
-    padding: 4px;
-    border-radius: 30px;
-    background: rgba(0, 0, 0, 0.5);  
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  
-  .progress-bar {
-    height: 20px;
-    border-radius: 30px;
-    transition: 0.5s linear;  
-    transition-property: width, background-color;    
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  
-  /* when it ended */
-  .progress-moved .progress-bar {
-    width: 100%; 
-    background-color: #AFF0F0;/*   #A9EED1;   */
-    animation: progressAnimation 9s;
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  /* animation, from 'start color' to '99% for end color'*/
-  @keyframes progressAnimation {
-    0%   { width: 5%; background-color: #FCFAA6;}
-    100% { width: 99.99%; background-color: #3CD184; }
-  }
+}
