@@ -1,0 +1,150 @@
+    .app-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+
+    height: 500px;
+    width: 400px;
+    background-color: cornflowerblue;
+    border: 20px solid black;
+    border-radius: 25px;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .app-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 90%;
+    height: 10%;
+  }
+
+  .app{
+    border-radius: 5px;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+  }
+
+  #app1{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+
+  #app2{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);;
+  }
+
+  #app3{
+    background: -webkit-radial-gradient(top left, #E3CD43, #4EC978);
+    background: -moz-radial-gradient(top left, #E3CD43, #4EC978);
+    background: radial-gradient(to bottom right, #E3CD43, #4EC978);
+  }
+
+  #app4{
+    background: -webkit-radial-gradient(bottom right, #E7C332, #1B588C);
+    background: -moz-radial-gradient(bottom right, #E7C332, #1B588C);
+    background: radial-gradient(to top left, #E7C332, #1B588C);
+  }
+
+  #app5{
+    background: -webkit-radial-gradient(left, #CBE427, #D027BE);
+    background: -moz-radial-gradient(left, #CBE427, #D027BE);
+    background: radial-gradient(to right, #CBE427, #D027BE);
+}
+
+#app6{
+background: #B21797;
+background: -webkit-radial-gradient(bottom left, #B21797, #391882);
+background: -moz-radial-gradient(bottom left, #B21797, #391882);
+background: radial-gradient(to top right, #B21797, #391882);
+}
+
+#app7{
+background: -webkit-radial-gradient(bottom, #E439AD, #7CB9BF);
+background: -moz-radial-gradient(bottom, #E439AD, #7CB9BF);
+background: radial-gradient(to top, #E439AD, #7CB9BF);
+}
+
+#app8{
+background: -webkit-radial-gradient(bottom right, #124253, #86F5AD);
+background: -moz-radial-gradient(bottom right, #124253, #86F5AD);
+background: radial-gradient(to top left, #124253, #86F5AD);
+}
+
+#app9{
+background: -webkit-radial-gradient(center, #2D66C3, #5393BF);
+background: -moz-radial-gradient(center, #2D66C3, #5393BF);
+background: radial-gradient(ellipse at center, #2D66C3, #5393BF);
+}
+
+#app10{
+background: -webkit-radial-gradient(bottom, #178D57, #D21F2E);
+background: -moz-radial-gradient(bottom, #178D57, #D21F2E);
+background: radial-gradient(to top, #178D57, #D21F2E);
+}
+
+#app11{
+background: -webkit-radial-gradient(bottom left, #D25939, #6631F2);
+background: -moz-radial-gradient(bottom left, #D25939, #6631F2);
+background: radial-gradient(to top right, #D25939, #6631F2);
+}
+
+#app12{
+background: -webkit-radial-gradient(bottom right, #8340A2, #84DCE5);
+background: -moz-radial-gradient(bottom right, #8340A2, #84DCE5);
+background: radial-gradient(to top left, #8340A2, #84DCE5);
+}
+
+#app13{
+background: -webkit-radial-gradient(center, #6576F9, #1E1A78);
+background: -moz-radial-gradient(center, #6576F9, #1E1A78);
+background: radial-gradient(ellipse at center, #6576F9, #1E1A78);
+}
+
+#app14{
+background: -webkit-radial-gradient(top, #33EDE0, #7DD75B);
+background: -moz-radial-gradient(top, #33EDE0, #7DD75B);
+background: radial-gradient(to bottom, #33EDE0, #7DD75B);
+}
+
+#app15{
+background: -webkit-radial-gradient(left, #B41F91, #0AB7CC);
+background: -moz-radial-gradient(left, #B41F91, #0AB7CC);
+background: radial-gradient(to right, #B41F91, #0AB7CC);
+}
+
+#app16{
+background: -webkit-radial-gradient(bottom left, #CCDD59, #299F04);
+background: -moz-radial-gradient(bottom left, #CCDD59, #299F04);
+background: radial-gradient(to top right, #CCDD59, #299F04);
+}
+
+#app17{
+background: -webkit-radial-gradient(center, #02CFA3, #D82FC0);
+background: -moz-radial-gradient(center, #02CFA3, #D82FC0);
+background: radial-gradient(ellipse at center, #02CFA3, #D82FC0);
+}
+
+#app18{
+background: -webkit-radial-gradient(top right, #4D1C50, #EDBA3E);
+background: -moz-radial-gradient(top right, #4D1C50, #EDBA3E);
+background: radial-gradient(to bottom left, #4D1C50, #EDBA3E);
+}
+
+#app19{
+background: -webkit-radial-gradient(bottom, #5DB48E, #8956E5);
+background: -moz-radial-gradient(bottom, #5DB48E, #8956E5);
+background: radial-gradient(to top, #5DB48E, #8956E5);
+}
+
+#app20{
+background: -webkit-radial-gradient(top left, #AA83A9, #C935FD);
+background: -moz-radial-gradient(top left, #AA83A9, #C935FD);
+background: radial-gradient(to bottom right, #AA83A9, #C935FD);
+}
