@@ -1,0 +1,24 @@
+.overlay1{
+  background: rgba(235, 0, 0, 0.5);
+  overflow: hidden;
+  height: 100%;
+}
+
+.overlay2{
+  background: rgba(20, 50, 220, 0.5);
+  overflow: hidden;
+  height: 100%;
+}
+
+.overlay3{
+  background: rgba(252, 176, 13, 0.5);
+  overflow: hidden;
+  height: 100%;
+}
+
+.overlay4{
+  background: rgba(196, 0, 214, 0.5);
+  overflow: hidden;
+  height: 100%;
+}
+
