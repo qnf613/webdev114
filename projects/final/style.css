@@ -86,7 +86,6 @@ section div{
  
   /* (A2) RESERVE MORE SPACE TO THE LEFT FOR THE TIMELINE */
   padding: 10px 10px 10px 50px;
-  
 }
 .vtl, .vtl * { box-sizing: border-box; }
 
@@ -96,7 +95,6 @@ section div{
   content: "";
   width: 5px;
   background-color: #de421a;
- 
   /* (B2) POSITION TO THE LEFT */
   position: absolute;
   top: 0; bottom: 0; left: 15px;
@@ -213,6 +211,6 @@ div.event::after {
   }
 
   .timeline{
-    margin-left: 5%;
+    margin-left: 30%;
   }
 }
