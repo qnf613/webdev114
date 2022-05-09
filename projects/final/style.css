@@ -1,24 +1,218 @@
-.overlay1{
-  background: rgba(235, 0, 0, 0.5);
-  overflow: hidden;
-  height: 100%;
+.NavContainer{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  justify-content:center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.overlay2{
-  background: rgba(20, 50, 220, 0.5);
-  overflow: hidden;
-  height: 100%;
+.NavItem{
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 
-.overlay3{
-  background: rgba(252, 176, 13, 0.5);
-  overflow: hidden;
-  height: 100%;
+body{
+  background-color: burlywood;
+  margin: 0;
+  text-align: center;
 }
 
-.overlay4{
-  background: rgba(196, 0, 214, 0.5);
-  overflow: hidden;
-  height: 100%;
+header{
+  text-align: center;
+  color: azure;
+  font-size: 32px;
+  background-color: sienna;
+  padding: 2rem 2rem 2rem 2rem;
+  font-family: 'Koulen', cursive;
 }
 
+nav{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+section{
+  padding-bottom: 5%;
+  margin: 5rem auto 5rem auto;
+  text-align: center;
+  width: 50%;
+}
+
+section h2{
+  font-size: 36px;
+  margin-bottom: 5%;
+}
+
+section h3{
+  font-size: 28px;
+}
+
+section div{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.headerwrapleft{
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify;
+  color: aliceblue;
+}
+
+.headerwrapright{
+  font-family: 'Quicksand', sans-serif;
+  text-align: right;
+  color: aliceblue;
+}
+
+.warpleft{
+  float: left;
+  margin-right: 2%;
+}
+
+.warpright{
+  float: right;
+  margin-left: 2%;
+}
+
+.timeline{
+  margin-left: 25%;
+}
+
+/*from https://code-boxx.com/simple-pure-css-timeline/#sec-vertical*/
+/* (A) TIMELINE CONTAINER */
+.vtl {
+  /* (A1) RELATIVE POSITION REQUIRED TO PROPERLY POSITION THE TIMELINE */
+  position: relative;
+ 
+  /* (A2) RESERVE MORE SPACE TO THE LEFT FOR THE TIMELINE */
+  padding: 10px 10px 10px 50px;
+  
+}
+.vtl, .vtl * { box-sizing: border-box; }
+
+/* (B) DRAW VERTICAL LINE USING ::BEFORE */
+.vtl::before {
+  /* (B1) VERTICAL LINE */
+  content: "";
+  width: 5px;
+  background-color: #de421a;
+ 
+  /* (B2) POSITION TO THE LEFT */
+  position: absolute;
+  top: 0; bottom: 0; left: 15px;
+}
+
+/* (C) COSMETICS FOR EVENTS */
+div.event {
+  padding: 20px 30px;
+  background-color: #ffebeb;
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* (D) COSMETICS FOR EVENT DATE & TEXT */
+p.date {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #ff6a00;
+}
+p.txt {
+  margin: 10px 0 0 0;
+  color: #222;
+}
+
+/* (E) EVENT "SPEECH BUBBLE CALLOUT" */
+div.event::before {
+  /* (E1) "MAGIC TRIANGLE" */
+  content: "";
+  border: 10px solid transparent;
+  border-right-color: #ffebeb;
+  border-left: 0;
+ 
+   /* (E2) POSITION TO THE LEFT */
+  position: absolute;
+  top: 20%; left: -10px;
+}
+
+/* (F) CIRCLE ON TIMELINE */
+div.event::after {
+  /* (F1) "MAGIC CIRCLE" */
+  content: "";
+  background: #fff;
+  border: 4px solid #DE421A;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+ 
+  /* (F2) POSITION TO THE LEFT */
+  position: absolute;
+  top: 20%; left: -44px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .NavContainer{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: grid;
+    justify-content:center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header{
+    font-size: 24px;
+    padding: 3rem 3rem 3rem 3rem;
+  }
+
+  body{
+    margin: 0;
+  }
+
+
+  section{
+    padding-bottom: 5%;
+    margin: 5rem auto 5rem auto;
+    text-align: center;
+    width: 50%;
+  }
+  
+  section h2{
+    font-size: 30px;
+  }
+
+  section h3{
+    font-size: 24px;
+  }
+  
+  section div{
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .headerwrapleft{
+    text-align: center;
+  }
+  
+  .headerwrapright{
+    text-align: center;
+  }
+
+  .warpleft{ 
+    float: none;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 2%;
+  }
+  
+  .warpright{ 
+    float: none;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 2%;
+  }
+
+  .timeline{
+    margin-left: 10%;
+  }
+}
